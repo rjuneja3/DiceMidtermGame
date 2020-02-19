@@ -5,23 +5,26 @@
 * Last Revision date: Feb 18, 2020
 * Created on : Feb 18, 2020
 */
-
 #pragma once
-#ifndef __START_BUTTON__
-#define __START_BUTTON__
+#ifndef __ROLL_BUTTON__
+#define __ROLL_BUTTON__
 
 #include "Button.h"
 
-class StartButton : public Button
+class RollButton : public Button
 {
 public:
-	StartButton();
-	~StartButton();
+	RollButton();
+	~RollButton();
 
 
 	bool ButtonClick() override;
+	int countsClickOnce();
+	void setClickOnce(int clickCount);
+
 private:
 	bool m_isClicked;
+	int m_pClickFlag;
 };
 
-#endif /* defined (__START_BUTTON__) */
+#endif /* defined (__ROLL_BUTTON__) */

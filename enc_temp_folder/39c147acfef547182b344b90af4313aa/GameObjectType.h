@@ -1,12 +1,3 @@
-
-/*
-* Author name: Rohan Juneja
-* Student ID: 300987725
-* Game Description: MidTermTest - Web Game Programming - Dice Game. Press the Roll button to roll the dices and display the result.
-* Last Revision date: Feb 18, 2020
-* Created on : Feb 18, 2020
-*/
-
 #pragma once
 #ifndef __GAME_OBJECT_TYPE__
 #define __GAME_OBJECT_TYPE__

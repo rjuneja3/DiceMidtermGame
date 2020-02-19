@@ -5,23 +5,20 @@
 * Last Revision date: Feb 18, 2020
 * Created on : Feb 18, 2020
 */
-
 #pragma once
-#ifndef __START_BUTTON__
-#define __START_BUTTON__
+#ifndef __BACK_TABLE__
+#define __BACK_TABLE__
+#include "DisplayObject.h"
 
-#include "Button.h"
-
-class StartButton : public Button
+class BackTable : public DisplayObject
 {
 public:
-	StartButton();
-	~StartButton();
+	BackTable();
+	~BackTable();
 
-
-	bool ButtonClick() override;
-private:
-	bool m_isClicked;
+	void draw() override;
+	void update() override;
+	void clean() override;
 };
 
-#endif /* defined (__START_BUTTON__) */
+#endif /* defined (__BACK_TABLE__) */

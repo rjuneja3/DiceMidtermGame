@@ -5,23 +5,16 @@
 * Last Revision date: Feb 18, 2020
 * Created on : Feb 18, 2020
 */
-
 #pragma once
-#ifndef __START_BUTTON__
-#define __START_BUTTON__
-
-#include "Button.h"
-
-class StartButton : public Button
-{
-public:
-	StartButton();
-	~StartButton();
-
-
-	bool ButtonClick() override;
-private:
-	bool m_isClicked;
+#ifndef __DICE_IMAGES__
+#define __DICE_IMAGES__
+enum DiceImages {
+	one = 1,
+	two,
+	three,
+	four,
+	five,
+	six
 };
 
-#endif /* defined (__START_BUTTON__) */
+#endif

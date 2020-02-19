@@ -5,23 +5,22 @@
 * Last Revision date: Feb 18, 2020
 * Created on : Feb 18, 2020
 */
-
 #pragma once
-#ifndef __START_BUTTON__
-#define __START_BUTTON__
+#ifndef __FIRST_DICE__
+#define __FIRST_DICE__
 
-#include "Button.h"
 
-class StartButton : public Button
+#include "DisplayObject.h"
+
+class FirstDice : public DisplayObject
 {
 public:
-	StartButton();
-	~StartButton();
-
-
-	bool ButtonClick() override;
-private:
-	bool m_isClicked;
+	FirstDice();
+	~FirstDice();
+	void draw() override;
+	void update() override;
+	void clean() override;
+	void draw(std::string imageID);
 };
 
-#endif /* defined (__START_BUTTON__) */
+#endif
